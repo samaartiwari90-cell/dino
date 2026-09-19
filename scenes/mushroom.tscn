@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://crfr2anwpxs3o"]
+
+[ext_resource type="Texture2D" uid="uid://tnq8pqbk3ytd" path="res://assist/Small_Mushrooms/7.png" id="1_b0s10"]
+
+[node name="Area2D" type="Area2D" unique_id=312651181]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=522406604]
+scale = Vector2(4, 4)
+texture = ExtResource("1_b0s10")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=448687705]
+scale = Vector2(4, 4)
+polygon = PackedVector2Array(15.75, 8.5, 16, -1.1999998, 4, -1.25, 3.25, -0.75, 2.5, 0.75, 1.25, 3.75, 3, 8.25, 4.25, 12, 4, 16, 12.5, 16)

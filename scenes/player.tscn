@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dtxgg6664swmr"]
 
 [ext_resource type="Texture2D" uid="uid://bn1jei1fb0l4" path="res://assist/sprites/knight.png" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://cc43c081fq1pt" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://dir1ff1chk5d3" path="res://scripts/player.gd" id="1_g2els"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
 atlas = ExtResource("1_3vyb7")
@@ -18,6 +18,22 @@ region = Rect2(64, 0, 32, 36)
 [sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
 atlas = ExtResource("1_3vyb7")
 region = Rect2(96, 0, 32, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tuyoq"]
+atlas = ExtResource("1_3vyb7")
+region = Rect2(0, 196, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fjrip"]
+atlas = ExtResource("1_3vyb7")
+region = Rect2(32, 196, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
+atlas = ExtResource("1_3vyb7")
+region = Rect2(64, 196, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ur7pv"]
+atlas = ExtResource("1_3vyb7")
+region = Rect2(96, 196, 32, 28)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_js7vb"]
 animations = [{
@@ -37,6 +53,23 @@ animations = [{
 "loop": 1,
 "name": &"default",
 "speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tuyoq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fjrip")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smehm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ur7pv")
+}],
+"loop": 1,
+"name": &"hurt",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tuyoq"]
@@ -48,11 +81,9 @@ script = ExtResource("1_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1971812288]
 sprite_frames = SubResource("SpriteFrames_js7vb")
 autoplay = "default"
-frame_progress = 0.25410777
+frame = 2
+frame_progress = 0.51787806
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1595740880]
 position = Vector2(-1, 3)
 shape = SubResource("RectangleShape2D_tuyoq")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=594478360]
-zoom = Vector2(4, 4)

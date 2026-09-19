@@ -4,6 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://dtxgg6664swmr" path="res://scenes/player.tscn" id="2_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://bprom57qclxl8" path="res://scenes/background.tscn" id="3_4wyf3"]
 
+[sub_resource type="GDScript" id="GDScript_4wyf3"]
+script/source = "extends Node2D
+
+func _process(delta):
+	$Ground.position.x -= 100 * delta
+"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k0juu"]
 texture = ExtResource("2_4wyf3")
 17:0/0 = 0
@@ -255,9 +262,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_k0juu")
 
 [node name="world" type="Node2D" unique_id=842565062]
-
-[node name="player" parent="." unique_id=74066256 instance=ExtResource("2_rwgxs")]
-position = Vector2(120, 182)
+script = SubResource("GDScript_4wyf3")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1035174831]
 tile_set = SubResource("TileSet_js7vb")
@@ -265,3 +270,10 @@ format = 2
 layer_0/tile_data = PackedInt32Array(1179648, 1245184, 1, 1179649, 1310720, 1, 1179650, 1376256, 1, 1179651, 1441792, 1, 1179652, 1507328, 1, 1179653, 1245184, 1, 1179654, 1310720, 1, 1179655, 1376256, 1, 1179656, 1441792, 1, 1179657, 1507328, 1, 1179658, 1245184, 1, 1179659, 1310720, 1, 1179660, 1376256, 1, 1179661, 1441792, 1, 1179662, 1507328, 1, 1179663, 1245184, 1, 1179664, 1310720, 1, 1179665, 1376256, 1, 1179666, 1441792, 1, 1179667, 1507328, 1)
 
 [node name="background" parent="." unique_id=1949756673 instance=ExtResource("3_4wyf3")]
+
+[node name="player" parent="." unique_id=74066256 instance=ExtResource("2_rwgxs")]
+position = Vector2(44, 278)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=671175146]
+position = Vector2(192, 196)
+zoom = Vector2(3, 3)

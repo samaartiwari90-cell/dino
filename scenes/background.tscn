@@ -1,32 +1,8 @@
 [gd_scene format=3 uid="uid://bprom57qclxl8"]
 
-[ext_resource type="Texture2D" uid="uid://c6ufm64ib0yjr" path="res://background/Background/Layers/3.png" id="2_cbsqf"]
-[ext_resource type="Texture2D" uid="uid://dqyae8eysduay" path="res://background/Background/Layers/2.png" id="2_jougr"]
 [ext_resource type="Texture2D" uid="uid://nk15bf1lo8xx" path="res://background/Background/Background.png" id="3_jougr"]
 
 [node name="background" type="ParallaxBackground" unique_id=1949756673]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="." unique_id=1949716903]
-motion_scale = Vector2(0.6, 1)
-motion_mirroring = Vector2(1152, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer" unique_id=489538649]
-texture_repeat = 2
-texture = ExtResource("2_jougr")
-centered = false
-region_enabled = true
-region_rect = Rect2(0, 0, 5760, 324)
-
-[node name="parallaxLayer2" type="ParallaxLayer" parent="." unique_id=798150909]
-motion_scale = Vector2(0.7, 1)
-motion_mirroring = Vector2(1152, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="parallaxLayer2" unique_id=1252113686]
-texture_repeat = 2
-texture = ExtResource("2_cbsqf")
-centered = false
-region_enabled = true
-region_rect = Rect2(0, 0, 5760, 324)
 
 [node name="parallaxLayer3" type="ParallaxLayer" parent="." unique_id=822214584]
 motion_scale = Vector2(0.8, 1)
@@ -34,7 +10,7 @@ motion_mirroring = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="parallaxLayer3" unique_id=117960876]
 texture_repeat = 2
-position = Vector2(0, 1)
+position = Vector2(-190, 57)
 texture = ExtResource("3_jougr")
 centered = false
 region_enabled = true
