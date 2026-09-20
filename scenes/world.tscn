@@ -461,9 +461,5 @@ tile_set = SubResource("TileSet_js7vb")
 position = Vector2(44, 278)
 script = ExtResource("4_k0juu")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=671175146]
-position = Vector2(149, 264)
-zoom = Vector2(3, 3)
-
 [node name="enemy" parent="." unique_id=1352570014 instance=ExtResource("5_71j4m")]
 position = Vector2(175, 285)
