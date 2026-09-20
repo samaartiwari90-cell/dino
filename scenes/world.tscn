@@ -489,118 +489,93 @@ tile_set = SubResource("TileSet_js7vb")
 [node name="background" parent="." unique_id=1949756673 instance=ExtResource("3_4wyf3")]
 
 [node name="player" parent="." unique_id=74066256 instance=ExtResource("2_rwgxs")]
+<<<<<<< HEAD
 position = Vector2(3544, 339)
+=======
+position = Vector2(1905, 306)
+>>>>>>> 03baaadf6586e2b8fdce26dd33be6f875e4f5215
 
 [node name="fire" parent="." unique_id=506932555 instance=ExtResource("6_qfnet")]
 position = Vector2(1688, 350)
-frame_progress = 0.13099812
 
 [node name="fire" parent="fire" unique_id=1152169305 instance=ExtResource("6_qfnet")]
 position = Vector2(46, 0)
-frame_progress = 0.17613056
 
 [node name="fire" parent="fire/fire" unique_id=1750083878 instance=ExtResource("6_qfnet")]
 position = Vector2(48, 0)
-frame_progress = 0.17613056
 
 [node name="fire" parent="fire/fire/fire" unique_id=618215417 instance=ExtResource("6_qfnet")]
 position = Vector2(50, -1)
-frame_progress = 0.17613056
 
 [node name="fire" parent="fire/fire/fire/fire" unique_id=1367633252 instance=ExtResource("6_qfnet")]
 position = Vector2(50, -2)
-frame_progress = 0.17613056
 
 [node name="fire" parent="fire/fire/fire/fire/fire" unique_id=1804186877 instance=ExtResource("6_qfnet")]
 position = Vector2(54, 1)
-frame_progress = 0.17613056
 
 [node name="fire" parent="fire/fire/fire/fire/fire/fire" unique_id=1688696335 instance=ExtResource("6_qfnet")]
 position = Vector2(60, -2)
-frame_progress = 0.17613056
 
 [node name="fire" parent="fire/fire/fire/fire/fire/fire/fire" unique_id=1101488705 instance=ExtResource("6_qfnet")]
 position = Vector2(59, 2)
 scale = Vector2(1.03125, 1)
-frame_progress = 0.17613056
 
 [node name="red fire" parent="." unique_id=980115232 instance=ExtResource("7_i7141")]
 position = Vector2(2169.25, 342)
 scale = Vector2(1.0972137, 1)
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire" unique_id=1512463561 instance=ExtResource("7_i7141")]
 position = Vector2(43.636097, 1)
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire/red fire" unique_id=1419775681 instance=ExtResource("7_i7141")]
 position = Vector2(36.892567, 0)
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire/red fire/red fire" unique_id=1354497406 instance=ExtResource("7_i7141")]
 position = Vector2(40.246384, -1)
 scale = Vector2(0.9271416, 1)
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire/red fire/red fire/red fire" unique_id=450680368 instance=ExtResource("7_i7141")]
 position = Vector2(40.608494, 1)
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire/red fire/red fire/red fire/red fire" unique_id=1192256142 instance=ExtResource("7_i7141")]
 position = Vector2(44.300106, -1)
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire/red fire/red fire/red fire/red fire/red fire" unique_id=2102181507 instance=ExtResource("7_i7141")]
 position = Vector2(44.994663, 0)
 scale = Vector2(1.0669826, 1)
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire/red fire/red fire/red fire/red fire/red fire/red fire" unique_id=236570221 instance=ExtResource("7_i7141")]
 position = Vector2(45.293686, 0)
 scale = Vector2(1.1223099, 1)
-frame_progress = 0.5078026
 
 [node name="red fire2" parent="." unique_id=1442643978 instance=ExtResource("7_i7141")]
 position = Vector2(2463, 340)
 scale = Vector2(1.1527778, 1)
-autoplay = ""
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire2" unique_id=1360026425 instance=ExtResource("7_i7141")]
 position = Vector2(34.909096, 1)
-autoplay = ""
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire2/red fire" unique_id=643104011 instance=ExtResource("7_i7141")]
 position = Vector2(36.89255, 1)
-autoplay = ""
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire2/red fire/red fire" unique_id=1633180557 instance=ExtResource("7_i7141")]
 position = Vector2(38.94816, -2)
-autoplay = ""
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire2/red fire/red fire/red fire" unique_id=1694226426 instance=ExtResource("7_i7141")]
 position = Vector2(36.8237, 1)
-autoplay = ""
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire2/red fire/red fire/red fire/red fire" unique_id=2061353540 instance=ExtResource("7_i7141")]
 position = Vector2(39.995617, 0)
 scale = Vector2(0.9927409, 1)
-autoplay = ""
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire2/red fire/red fire/red fire/red fire/red fire" unique_id=1424963534 instance=ExtResource("7_i7141")]
 position = Vector2(41.172195, 0)
 scale = Vector2(1.0503037, 1)
-autoplay = ""
-frame_progress = 0.5078026
 
 [node name="red fire" parent="red fire2/red fire/red fire/red fire/red fire/red fire/red fire" unique_id=1020152365 instance=ExtResource("7_i7141")]
 position = Vector2(44.154026, 1)
 scale = Vector2(1.1223216, 1)
+<<<<<<< HEAD
 autoplay = ""
 frame_progress = 0.5078026
 
@@ -686,3 +661,5 @@ position = Vector2(118, 4)
 [node name="greeny boi" parent="greeny boi/greeny boi/greeny boi/greeny boi/greeny boi/greeny boi/greeny boi/greeny boi" unique_id=15487638 instance=ExtResource("8_4mrxx")]
 
 [node name="greeny boi" parent="greeny boi/greeny boi/greeny boi/greeny boi/greeny boi/greeny boi/greeny boi/greeny boi/greeny boi" unique_id=1477304544 instance=ExtResource("8_4mrxx")]
+=======
+>>>>>>> 03baaadf6586e2b8fdce26dd33be6f875e4f5215
