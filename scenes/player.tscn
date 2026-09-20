@@ -90,3 +90,10 @@ shape = SubResource("CapsuleShape2D_md0e3")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2098060096]
 zoom = Vector2(3, 3)
+
+[node name="Label" type="Label" parent="Camera2D" unique_id=571935840]
+offset_left = 124.0
+offset_top = -179.0
+offset_right = 213.0
+offset_bottom = -156.0
+text = "♥ ♥ ♥ ♥ ♥"
