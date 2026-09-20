@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://dtxgg6664swmr" path="res://scenes/player.tscn" id="2_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://bprom57qclxl8" path="res://scenes/background.tscn" id="3_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://cuxyovuw1lidb" path="res://scenes/fire.tscn" id="6_qfnet"]
-[ext_resource type="PackedScene" uid="uid://dprgbl5c6ui7q" path="res://scenes/world_changerr.tscn" id="7_4mrxx"]
 [ext_resource type="PackedScene" uid="uid://cbblyj646w5ua" path="res://scenes/red_fire.tscn" id="7_i7141"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k0juu"]
@@ -485,7 +484,7 @@ tile_set = SubResource("TileSet_js7vb")
 [node name="background" parent="." unique_id=1949756673 instance=ExtResource("3_4wyf3")]
 
 [node name="player" parent="." unique_id=74066256 instance=ExtResource("2_rwgxs")]
-position = Vector2(-112, 279)
+position = Vector2(-82, 278)
 
 [node name="fire" parent="." unique_id=506932555 instance=ExtResource("6_qfnet")]
 position = Vector2(1688, 350)
@@ -567,6 +566,3 @@ scale = Vector2(1.0503037, 1)
 [node name="red fire" parent="red fire2/red fire/red fire/red fire/red fire/red fire/red fire" unique_id=1020152365 instance=ExtResource("7_i7141")]
 position = Vector2(44.154026, 1)
 scale = Vector2(1.1223216, 1)
-
-[node name="world_changerr" parent="." unique_id=849261926 instance=ExtResource("7_4mrxx")]
-position = Vector2(94, 272)

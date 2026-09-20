@@ -6,12 +6,13 @@
 
 [node name="parallaxLayer3" type="ParallaxLayer" parent="." unique_id=822214584]
 motion_scale = Vector2(0.8, 1)
-motion_mirroring = Vector2(1152, 0)
+motion_mirroring = Vector2(11520, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="parallaxLayer3" unique_id=117960876]
 texture_repeat = 2
 position = Vector2(-190, 57)
+scale = Vector2(1.0074652, 1)
 texture = ExtResource("3_jougr")
 centered = false
 region_enabled = true
-region_rect = Rect2(0, 0, 5760, 324)
+region_rect = Rect2(0, 0, 11520, 324)
