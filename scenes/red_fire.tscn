@@ -1,36 +1,41 @@
 [gd_scene format=3 uid="uid://cbblyj646w5ua"]
 
-[ext_resource type="Texture2D" uid="uid://i0pon8dir58b" path="res://Pixel fire asset pack v1.2/Pixel Fire Asset Pack Colored/fire asset red/Group 4 - 2/Group 4 - 2.png" id="1_65oqa"]
+[ext_resource type="Texture2D" uid="uid://prpyik14r7y3" path="res://Pixel fire asset pack v1.2/Pixel Fire Asset Pack Colored/fire asset red/Group 4 - 1/Group 4 - 1.png" id="1_65oqa"]
+[ext_resource type="Script" uid="uid://cqjagi3wxueuc" path="res://scripts/area_2d.gd" id="1_ukoda"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ukoda"]
 atlas = ExtResource("1_65oqa")
-region = Rect2(0, 0, 36, 48)
+region = Rect2(0, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wkwcs"]
 atlas = ExtResource("1_65oqa")
-region = Rect2(36, 0, 36, 48)
+region = Rect2(32, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1rejk"]
 atlas = ExtResource("1_65oqa")
-region = Rect2(72, 0, 36, 48)
+region = Rect2(64, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_03cgo"]
 atlas = ExtResource("1_65oqa")
-region = Rect2(108, 0, 36, 48)
+region = Rect2(96, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ycxfk"]
 atlas = ExtResource("1_65oqa")
-region = Rect2(144, 0, 36, 48)
+region = Rect2(128, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ednic"]
 atlas = ExtResource("1_65oqa")
-region = Rect2(180, 0, 36, 48)
+region = Rect2(160, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_igk5t"]
 atlas = ExtResource("1_65oqa")
-region = Rect2(216, 0, 36, 48)
+region = Rect2(192, 0, 32, 48)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_78b02"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_tyry5"]
+atlas = ExtResource("1_65oqa")
+region = Rect2(224, 0, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_js7vb"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -53,23 +58,28 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_igk5t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyry5")
 }],
 "loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_78b02"]
-radius = 13.09091
-height = 46.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tx5gl"]
+radius = 8.0
 
-[node name="red fire" type="AnimatedSprite2D" unique_id=980115232]
-position = Vector2(1, 4)
-scale = Vector2(0.9166667, 1)
-sprite_frames = SubResource("SpriteFrames_78b02")
+[node name="Node2D" type="Node2D" unique_id=1334465607]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1114439317]
+script = ExtResource("1_ukoda")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D" unique_id=1050506084]
+sprite_frames = SubResource("SpriteFrames_js7vb")
 autoplay = "default"
-frame_progress = 0.21511433
+frame_progress = 0.9264678
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=581501146]
-position = Vector2(-2.1818182, 2)
-shape = SubResource("CapsuleShape2D_78b02")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=617002528]
+position = Vector2(0, 7)
+shape = SubResource("CapsuleShape2D_tx5gl")
