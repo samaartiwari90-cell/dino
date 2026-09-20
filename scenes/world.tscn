@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dtxgg6664swmr" path="res://scenes/player.tscn" id="2_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://bprom57qclxl8" path="res://scenes/background.tscn" id="3_4wyf3"]
 [ext_resource type="Script" uid="uid://dfrwkh1ptyk1e" path="res://player.gd" id="4_k0juu"]
+[ext_resource type="PackedScene" uid="uid://cwapiirwe0dxy" path="res://scenes/enemy.tscn" id="5_71j4m"]
 
 [sub_resource type="GDScript" id="GDScript_4wyf3"]
 
@@ -463,3 +464,6 @@ script = ExtResource("4_k0juu")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=671175146]
 position = Vector2(149, 264)
 zoom = Vector2(3, 3)
+
+[node name="enemy" parent="." unique_id=1352570014 instance=ExtResource("5_71j4m")]
+position = Vector2(175, 285)
