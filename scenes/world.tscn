@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bnqvfcbqf2xmf" path="res://assist/Dimensional_Portal.png" id="2_71j4m"]
 [ext_resource type="PackedScene" uid="uid://dtxgg6664swmr" path="res://scenes/player.tscn" id="2_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://bprom57qclxl8" path="res://scenes/background.tscn" id="3_4wyf3"]
-[ext_resource type="Script" uid="uid://dfrwkh1ptyk1e" path="res://player.gd" id="4_k0juu"]
+[ext_resource type="PackedScene" uid="uid://c5sawap84j8hk" path="res://scenes/rock.tscn" id="6_i7141"]
 [ext_resource type="PackedScene" uid="uid://cuxyovuw1lidb" path="res://scenes/fire.tscn" id="6_qfnet"]
 
 [sub_resource type="GDScript" id="GDScript_4wyf3"]
@@ -486,8 +486,7 @@ tile_set = SubResource("TileSet_js7vb")
 [node name="background" parent="." unique_id=1949756673 instance=ExtResource("3_4wyf3")]
 
 [node name="player" parent="." unique_id=74066256 instance=ExtResource("2_rwgxs")]
-position = Vector2(1369, 291)
-script = ExtResource("4_k0juu")
+position = Vector2(-95, 276)
 
 [node name="fire" parent="." unique_id=506932555 instance=ExtResource("6_qfnet")]
 position = Vector2(1680, 360)
@@ -520,3 +519,6 @@ frame_progress = 0.17613056
 [node name="fire" parent="fire/fire/fire/fire/fire/fire/fire" unique_id=1101488705 instance=ExtResource("6_qfnet")]
 position = Vector2(65, -2)
 frame_progress = 0.17613056
+
+[node name="Area2D" parent="." unique_id=1848045052 instance=ExtResource("6_i7141")]
+position = Vector2(10, 272)

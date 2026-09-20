@@ -1,29 +1,32 @@
 extends CharacterBody2D
 
-const SPEED = 400.0
+const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
+var health: int = 5
 var is_dead: bool = false
+var invincible: bool = false
+var respawn_position: Vector2
+
+@onready var health_label: Label = $Camera2D/Label
 
 func _ready() -> void:
-	# Automatically adds the player to the "player" group on startup
 	add_to_group("player")
+	respawn_position = global_position
+	update_health_label()
 
 func _physics_process(delta: float) -> void:
-	# Lock movement and physics while dead
 	if is_dead:
 		return
 
-	# Apply gravity
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# Handle jump input
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	# Handle horizontal movement
 	var direction := Input.get_axis("ui_left", "ui_right")
+
 	if direction:
 		velocity.x = direction * SPEED
 	else:
@@ -31,10 +34,42 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
-# Called by the trap/hazard script upon collision
-func die() -> void:
-	if is_dead:
+func update_health_label() -> void:
+	var hearts := ""
+
+	for i in range(health):
+		hearts += "♥ "
+
+	health_label.text = hearts
+
+func take_damage(amount: int) -> void:
+	if is_dead or invincible:
 		return
-		
+
+	health -= amount
+
+	if health <= 0:
+		health = 0
+		update_health_label()
+		die()
+	else:
+		update_health_label()
+		print("ROCK DAMAGE! Health: ", health)
+
+func die() -> void:
 	is_dead = true
-	velocity = Vector2.ZERO # Instantly freeze momentum
+	velocity = Vector2.ZERO
+
+	await get_tree().create_timer(1.0).timeout
+
+	global_position = respawn_position
+	health = 5
+	update_health_label()
+
+	is_dead = false
+	invincible = true
+	velocity = Vector2.ZERO
+
+	await get_tree().create_timer(2.0).timeout
+
+	invincible = false

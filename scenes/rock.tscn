@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://c5sawap84j8hk"]
 
 [ext_resource type="Texture2D" uid="uid://b0wcnapwnifwp" path="res://assist/Rocks/1.png" id="1_1di36"]
+[ext_resource type="Script" uid="uid://dobqdht703ms5" path="res://scripts/rock.gd" id="1_mek2u"]
 
 [node name="Area2D" type="Area2D" unique_id=1848045052]
+script = ExtResource("1_mek2u")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=53349512]
 position = Vector2(4, 0)
@@ -11,3 +13,5 @@ texture = ExtResource("1_1di36")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1650377679]
 position = Vector2(4, 0)
 polygon = PackedVector2Array(-6, 0, -9, -2, -11, -2, -12, -1, -12, 3, -16, 10, -16, 16, 7, 16, 7, 10, 5, 7, 2, 6, -2, 10, -4, 4)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
