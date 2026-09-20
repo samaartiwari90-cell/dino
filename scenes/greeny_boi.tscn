@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://ob4tycld2jya"]
+
+[ext_resource type="Texture2D" uid="uid://dvah3a4f4ek5d" path="res://Pixel fire asset pack v1.2/Pixel Fire Asset Pack Colored/fire asset green/Group 4 - 1/Group 4 - 1.png" id="1_rim4i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lid43"]
+atlas = ExtResource("1_rim4i")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gc8h"]
+atlas = ExtResource("1_rim4i")
+region = Rect2(32, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ouue8"]
+atlas = ExtResource("1_rim4i")
+region = Rect2(64, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qy7e6"]
+atlas = ExtResource("1_rim4i")
+region = Rect2(96, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_plkeb"]
+atlas = ExtResource("1_rim4i")
+region = Rect2(128, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vbpv5"]
+atlas = ExtResource("1_rim4i")
+region = Rect2(160, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l60po"]
+atlas = ExtResource("1_rim4i")
+region = Rect2(192, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hp1q"]
+atlas = ExtResource("1_rim4i")
+region = Rect2(224, 0, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_78b02"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lid43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6gc8h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ouue8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qy7e6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_plkeb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vbpv5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l60po")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6hp1q")
+}],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="greeny boi" type="Node2D" unique_id=1856740525]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1622699404]
+position = Vector2(-205, 618.5)
+scale = Vector2(2.9375002, 2.8125002)
+sprite_frames = SubResource("SpriteFrames_78b02")
+animation = &"new_animation"
+autoplay = "new_animation"
+frame_progress = 0.62909263
