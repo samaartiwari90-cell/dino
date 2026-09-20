@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://d1mk6br4w3ydu"]
 
+<<<<<<< HEAD
 [node name="world_2" type="Node2D" unique_id=1789356318]
+=======
+[ext_resource type="PackedScene" uid="uid://da3tubrx78php" path="res://scenes/parallax_background.tscn" id="1_tjjxi"]
+
+[node name="world 2" type="Node2D" unique_id=1331295496]
+
+[node name="ParallaxBackground" parent="." unique_id=65420729 instance=ExtResource("1_tjjxi")]
+>>>>>>> 128d0cd (world building)

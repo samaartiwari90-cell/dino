@@ -68,8 +68,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m8tho"]
-radius = 5.0
-height = 26.0
+radius = 15.0
+height = 62.0
 
 [node name="Node2D" type="Node2D" unique_id=1404427369]
 
@@ -77,10 +77,12 @@ height = 26.0
 script = ExtResource("1_xqmqg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D" unique_id=1145175658]
+position = Vector2(24.000004, -24.499998)
+scale = Vector2(2.2500002, 1.8541665)
 sprite_frames = SubResource("SpriteFrames_js7vb")
 autoplay = "default"
 frame_progress = 0.036306955
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=472846937]
-position = Vector2(1, 8)
+position = Vector2(20, -9)
 shape = SubResource("CapsuleShape2D_m8tho")

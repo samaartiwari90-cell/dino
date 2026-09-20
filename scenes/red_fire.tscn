@@ -68,7 +68,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tx5gl"]
-radius = 8.0
+radius = 18.0
+height = 44.0
 
 [node name="Node2D" type="Node2D" unique_id=1334465607]
 
@@ -76,6 +77,8 @@ radius = 8.0
 script = ExtResource("1_ukoda")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D" unique_id=1050506084]
+position = Vector2(0.99999905, -8)
+scale = Vector2(1.25, 1.6250001)
 sprite_frames = SubResource("SpriteFrames_js7vb")
 autoplay = "default"
 frame_progress = 0.9264678

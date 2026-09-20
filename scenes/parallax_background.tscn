@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://da3tubrx78php"]
+
+[ext_resource type="Texture2D" uid="uid://bj6u50kn5ljs4" path="res://vista-ten/downs/downs.png" id="1_m10ct"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" unique_id=65420729]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="." unique_id=132205714]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer" unique_id=1591131008]
+texture_repeat = 2
+position = Vector2(46052, 5173)
+scale = Vector2(23.93802, 48)
+texture = ExtResource("1_m10ct")
+region_enabled = true
+region_rect = Rect2(0, 0, 3840, 216)
