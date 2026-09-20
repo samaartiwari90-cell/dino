@@ -1,40 +1,7 @@
 [gd_scene format=3 uid="uid://cwapiirwe0dxy"]
 
-[ext_resource type="Script" uid="uid://dqlhu1ve4rvas" path="res://enemy.gd" id="1_md0e3"]
-[ext_resource type="Texture2D" uid="uid://drojyk3onc1n2" path="res://assist/Rocks/5.png" id="2_4ra3w"]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1406837284]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_wnnfe"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_4ra3w")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 5.0
-}]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1477231056]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2n1j1"]
-size = Vector2(33.5, 18)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_md0e3"]
-size = Vector2(26, 8)
-
-[node name="`Rocktrap" type="CharacterBody2D" unique_id=749240696]
-script = ExtResource("1_md0e3")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=925354205]
-position = Vector2(4, -4)
-sprite_frames = SubResource("SpriteFrames_wnnfe")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D" unique_id=1324081053]
-position = Vector2(0.25, 8)
-shape = SubResource("RectangleShape2D_2n1j1")
-
-[node name="Hitbox" type="Area2D" parent="." unique_id=346452583]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=939276891]
-position = Vector2(3, -4)
-shape = SubResource("RectangleShape2D_md0e3")
-
-[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D" unique_id=1917613601]

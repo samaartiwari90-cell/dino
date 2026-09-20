@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://cuxyovuw1lidb"]
+
+[ext_resource type="Texture2D" uid="uid://c0tdobad7s30y" path="res://Pixel fire asset pack v1.2/Pixel Fire Asset Pack Colored/fire asset blue/Group 6 - 1/Group 6 - 1.png" id="1_52nqi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xqmqg"]
+atlas = ExtResource("1_52nqi")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5mbl"]
+atlas = ExtResource("1_52nqi")
+region = Rect2(32, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rach5"]
+atlas = ExtResource("1_52nqi")
+region = Rect2(64, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txieb"]
+atlas = ExtResource("1_52nqi")
+region = Rect2(96, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4l61p"]
+atlas = ExtResource("1_52nqi")
+region = Rect2(128, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10wrr"]
+atlas = ExtResource("1_52nqi")
+region = Rect2(160, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_theev"]
+atlas = ExtResource("1_52nqi")
+region = Rect2(192, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3l77w"]
+atlas = ExtResource("1_52nqi")
+region = Rect2(224, 0, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wnnfe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xqmqg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5mbl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rach5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txieb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4l61p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10wrr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_theev")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3l77w")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2n1j1"]
+radius = 8.0
+
+[node name="fire" type="AnimatedSprite2D" unique_id=506932555]
+sprite_frames = SubResource("SpriteFrames_wnnfe")
+autoplay = "default"
+frame_progress = 0.3855505
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1244703160]
+position = Vector2(0, 6)
+shape = SubResource("CapsuleShape2D_2n1j1")
