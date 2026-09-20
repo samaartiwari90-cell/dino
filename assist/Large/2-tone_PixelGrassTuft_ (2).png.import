@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn0uj6jhhk58t"
-path="res://.godot/imported/contact.png-065957cc6c6c4f51b69bf88c552bc20b.ctex"
+uid="uid://mjx666lxh5ch"
+path="res://.godot/imported/2-tone_PixelGrassTuft_ (2).png-a8735d65dea19a90c414db65832fff07.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vista-ten/contact.png"
-dest_files=["res://.godot/imported/contact.png-065957cc6c6c4f51b69bf88c552bc20b.ctex"]
+source_file="res://assist/Large/2-tone_PixelGrassTuft_ (2).png"
+dest_files=["res://.godot/imported/2-tone_PixelGrassTuft_ (2).png-a8735d65dea19a90c414db65832fff07.ctex"]
 
 [params]
 

@@ -9,8 +9,6 @@ func _process(delta):
 
 	for body in get_overlapping_bodies():
 		if body is CharacterBody2D:
-			if body.health > 0:
-				body.take_damage(5)
-
+			body.take_damage(5)
 			cooldown = 1.0
 			break

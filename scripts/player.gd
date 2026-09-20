@@ -8,12 +8,14 @@ var is_dead: bool = false
 var invincible: bool = false
 var respawn_position: Vector2
 
-@onready var health_label: Label = $Camera2D/Label
+@onready var health_label: Label = $Camera2D/Label2
+
 
 func _ready() -> void:
 	add_to_group("player")
 	respawn_position = global_position
 	update_health_label()
+
 
 func _physics_process(delta: float) -> void:
 	if is_dead:
@@ -34,6 +36,7 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
+
 func update_health_label() -> void:
 	var hearts := ""
 
@@ -41,6 +44,7 @@ func update_health_label() -> void:
 		hearts += "♥ "
 
 	health_label.text = hearts
+
 
 func take_damage(amount: int) -> void:
 	if is_dead or invincible:
@@ -54,7 +58,8 @@ func take_damage(amount: int) -> void:
 		die()
 	else:
 		update_health_label()
-		print("ROCK DAMAGE! Health: ", health)
+		print("DAMAGE! Health:", health)
+
 
 func die() -> void:
 	is_dead = true
